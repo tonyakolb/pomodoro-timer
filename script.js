@@ -18,6 +18,7 @@ function startPomodoro() {
     mode = 'pomodoro';
     totalSeconds = convertTime('25:00');
     pomodoroTime.innerText = '25:00';
+    stopTimer();
 }
 
 function startBreak() {
@@ -26,6 +27,7 @@ function startBreak() {
     mode = 'break';
     totalSeconds = convertTime('05:00');
     pomodoroTime.innerText = '05:00';
+    stopTimer();
 }
 
 function convertTime(timeStr) {
